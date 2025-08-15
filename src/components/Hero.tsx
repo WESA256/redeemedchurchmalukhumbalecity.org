@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, Church } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
