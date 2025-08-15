@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Clock, MapPin, Users } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, Camera } from 'lucide-react';
 
 const Events = () => {
   const events = [
@@ -66,9 +66,53 @@ const Events = () => {
           </p>
         </div>
 
+        {/* Event Photo Gallery */}
+        <div className="grid md:grid-cols-4 gap-4 mb-16">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-square bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+              <div className="text-center text-purple-700">
+                <Camera className="h-8 w-8 mx-auto mb-2" />
+                <p className="text-xs font-semibold">Easter 2023</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-square bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+              <div className="text-center text-green-700">
+                <Camera className="h-8 w-8 mx-auto mb-2" />
+                <p className="text-xs font-semibold">Youth Conference</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+              <div className="text-center text-blue-700">
+                <Camera className="h-8 w-8 mx-auto mb-2" />
+                <p className="text-xs font-semibold">Community Outreach</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-square bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+              <div className="text-center text-yellow-700">
+                <Camera className="h-8 w-8 mx-auto mb-2" />
+                <p className="text-xs font-semibold">Anniversary</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events.map((event, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {/* Event Image Placeholder */}
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="text-center text-blue-700">
+                  <Calendar className="h-12 w-12 mx-auto mb-2" />
+                  <p className="text-sm font-semibold">Event Photo</p>
+                  <p className="text-xs">Coming Soon</p>
+                </div>
+              </div>
+              
               <div className="bg-gradient-to-r from-blue-700 to-blue-800 p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                 <div className="flex items-center gap-2 text-blue-100">

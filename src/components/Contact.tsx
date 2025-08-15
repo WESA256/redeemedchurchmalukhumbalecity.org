@@ -143,6 +143,28 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                <div className="text-center text-green-700">
+                  <MapPin className="h-16 w-16 mx-auto mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">Church Location</h4>
+                  <p className="text-sm">Interactive Map Coming Soon</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Church Exterior Image */}
+            <div className="bg-gray-100 rounded-2xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="text-center text-blue-700">
+                  <Church className="h-16 w-16 mx-auto mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">Church Building</h4>
+                  <p className="text-sm">Exterior Photo Coming Soon</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Community Image */}
             <div className="bg-gray-100 rounded-2xl p-8 text-center">
               <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Find Us</h4>

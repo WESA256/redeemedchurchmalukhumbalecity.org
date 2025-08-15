@@ -46,7 +46,18 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="lg:pl-12">
+          <div className="lg:pl-12 space-y-8">
+            {/* Church Image */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                <div className="text-center text-white/80">
+                  <Church className="h-16 w-16 mx-auto mb-4" />
+                  <p className="text-lg font-semibold">Church Building</p>
+                  <p className="text-sm">Photo Coming Soon</p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 space-y-6">
               <h3 className="text-2xl font-bold text-yellow-400">Service Times</h3>
               

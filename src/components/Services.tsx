@@ -69,6 +69,34 @@ const Services = () => {
         </div>
 
         <div className="mt-16 bg-gradient-to-r from-blue-700 to-blue-800 rounded-2xl p-8 md:p-12 text-center text-white">
+          {/* Service Images Gallery */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden">
+              <div className="aspect-video flex items-center justify-center">
+                <div className="text-center text-white/80">
+                  <Church className="h-12 w-12 mx-auto mb-2" />
+                  <p className="text-sm font-semibold">Sunday Worship</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden">
+              <div className="aspect-video flex items-center justify-center">
+                <div className="text-center text-white/80">
+                  <BookOpen className="h-12 w-12 mx-auto mb-2" />
+                  <p className="text-sm font-semibold">Bible Study</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden">
+              <div className="aspect-video flex items-center justify-center">
+                <div className="text-center text-white/80">
+                  <Users2 className="h-12 w-12 mx-auto mb-2" />
+                  <p className="text-sm font-semibold">Fellowship</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <h3 className="text-3xl font-bold mb-4">New to Our Church?</h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             We'd love to welcome you to our church family! Join us for any of our services 

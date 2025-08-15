@@ -61,7 +61,19 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="space-y-8">
+            {/* Pastor/Leadership Image */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="text-center text-blue-700">
+                  <Users className="h-16 w-16 mx-auto mb-4" />
+                  <p className="text-lg font-semibold">Church Leadership</p>
+                  <p className="text-sm">Photo Coming Soon</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Vision & Mission</h3>
             <div className="space-y-6">
               <div>
@@ -79,6 +91,7 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
 
